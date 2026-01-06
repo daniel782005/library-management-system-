@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Library Management System</title>
+</head>
+<body>
+    <h1>Library Management System</h1> [cite: 211]
+    
+    <div id="book-form">
+        <input type="number" id="bookId" placeholder="Book ID">
+        <input type="text" id="title" placeholder="Title">
+        <input type="text" id="author" placeholder="Author">
+        <input type="text" id="category" placeholder="Category">
+        <input type="number" id="year" placeholder="Year">
+        <input type="number" id="copies" placeholder="Copies">
+        <button onclick="addBook()">Add Book</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th><th>Title</th><th>Author</th><th>Category</th><th>Year</th><th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
